@@ -14,14 +14,9 @@ namespace algorithms
 
             // Testing Area
             // ------------
-            BinaryTree bt = new BinaryTree();
-            bt.root = new Node(1);
-            bt.root.left = new Node(2);
-            bt.root.right = new Node(3);
-            bt.root.left.left = new Node(4);
-            bt.root.left.right = new Node(5);   
-            int result = bt.maxDepth(bt.root);
-            System.Console.WriteLine($"The height of the tree is {result}");
+            int[] nums = {4,4,1,2,3,1,2};
+            SingleNumber single = new SingleNumber();
+            single.single(nums);
 
         }
     }
