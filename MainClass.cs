@@ -13,11 +13,8 @@ namespace algorithms
             // pending.print();
 
             // Testing Area
-            // ------------
-            int[] nums = {4,4,1,2,3,1,2};
-            SingleNumber single = new SingleNumber();
-            single.single(nums);
-
+            // ------------ 
+            
         }
     }
 

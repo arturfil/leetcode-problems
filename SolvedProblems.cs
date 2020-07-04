@@ -44,6 +44,29 @@ namespace algorithms
           bt.root.left.right = new Node(5);   
           int result = bt.maxDepth(bt.root);
           System.Console.WriteLine($'The height of the tree is {result}'); // need double quotes here in order to work
+
+          /**
+          int[] nums = {4,4,1,2,3,1,2};
+          SingleNumber single = new SingleNumber();
+          single.single(nums);
+
+          /**
+          DeleteNode
+          LinkedList list = new LinkedList();
+          list.AddToEnd(4);
+          list.AddToEnd(6);
+          list.AddToEnd(10);
+          list.AddToEnd(11);
+          list.AddToBeginning(22);
+          list.AddToBeginning(42);
+          list.Print();
+          // list.FindNode(42);
+          list.DeleteNode(list.head, 10);
+          System.Console.WriteLine("");
+          list.Print();
+          list.DeleteNode(list.head, 6);
+          System.Console.WriteLine("");
+          list.Print();
         "
       );
     }

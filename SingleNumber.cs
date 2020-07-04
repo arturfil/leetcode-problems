@@ -38,6 +38,7 @@ Output: 4
      This is because the other value are REPEATED, and hence we will end up only with the single value as a result one way or another.
   */
   public class SingleNumber {
+
     // test array = {4, 1, 2, 4, 5, 1, 2};
     /* result print out:
         4

@@ -2,11 +2,11 @@ using System;
 
 namespace algorithms {
 
-  public class Node {
+  public class TreeNode {
     public int data;
-    public Node left, right;
+    public TreeNode left, right;
 
-    public Node(int item) {
+    public TreeNode(int item) {
       data = item;
       left = right = null; // we initialize an empty tree
     }
@@ -21,9 +21,9 @@ namespace algorithms {
   */
   
   public class BinaryTree {
-    public Node root;
+    public TreeNode root;
     
-    public int maxDepth(Node node) {
+    public int maxDepth(TreeNode node) {
       if (node == null)
         return 0;
       int left = maxDepth(node.left);
