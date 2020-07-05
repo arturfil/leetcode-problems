@@ -67,6 +67,15 @@ namespace algorithms
           list.DeleteNode(list.head, 6);
           System.Console.WriteLine("");
           list.Print();
+
+          /**
+          FizzBuzz fizz = new FizzBuzz();
+          fizz.Print(15);
+
+          /**
+          TwoSum sum = new TwoSum();
+          int[] test = {3,3};
+          sum.returnSum(test, 6);
         "
       );
     }
