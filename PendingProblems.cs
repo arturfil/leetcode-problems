@@ -16,7 +16,7 @@ namespace algorithms
 
           /**
           ValidParenthesis valid = new ValidParenthesis();
-            valid.IsValid('()[]{}'); // this go with double quotes
+          valid.IsValid('()[]{}'); // this go with double quotes
         "
       );
     }

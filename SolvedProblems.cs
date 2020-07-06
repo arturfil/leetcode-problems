@@ -76,6 +76,12 @@ namespace algorithms
           TwoSum sum = new TwoSum();
           int[] test = {3,3};
           sum.returnSum(test, 6);
+
+          /**
+          ValidAnagram vAnagram = new ValidAnagram();
+          string s1 = 'airplane';                           // NOTE: this go with doulbe quotes on implementation
+          string s2 = 'lanepair';                           // NOTE: this go with doulbe quotes on implementation
+          System.Console.WriteLine(vAnagram.Check(s1, s2));
         "
       );
     }
