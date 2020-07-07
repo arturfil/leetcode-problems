@@ -19,7 +19,7 @@ namespace algorithms
             ValidAnagram vAnagram = new ValidAnagram();
             string s1 = "anagram";                           // NOTE: this go with doulbe quotes on implementation
             string s2 = "nagaram";                           // NOTE: this go with doulbe quotes on implementation
-            System.Console.WriteLine(vAnagram.Check(s1, s2));
+            System.Console.WriteLine(vAnagram.isAnagram(s1, s2));
         }
     }
 

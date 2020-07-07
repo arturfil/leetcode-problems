@@ -1,3 +1,5 @@
+using System;
+
 namespace algorithms {
 
   /**
@@ -25,42 +27,57 @@ namespace algorithms {
 
   public class ValidAnagram {
 
-    public bool Check(string s, string t) {
-      if (s.Length != t.Length) 
-        return false;
+    // public bool Check(string s, string t) {
+    //   if (s.Length != t.Length) 
+    //     return false;
 
-      char[] sOne = s.ToCharArray(); 
-      char[] sTwo = t.ToCharArray(); 
+    //   char[] sOne = s.ToCharArray(); 
+    //   char[] sTwo = t.ToCharArray(); 
       
-      // sort method
-      sOne = sort(sOne);
-      sTwo = sort(sTwo);
+    //   // sort method
+    //   sOne = sort(sOne);
+    //   sTwo = sort(sTwo);
 
-      System.Console.WriteLine(sOne);
-      System.Console.WriteLine(sTwo);
-      s = new string(sOne);
-      t = new string(sTwo);
-      // System.Console.WriteLine($"Here we have s: {s} and t: {t}");
-      return s == t;
-    }
+    //   System.Console.WriteLine(sOne);
+    //   System.Console.WriteLine(sTwo);
+    //   s = new string(sOne);
+    //   t = new string(sTwo);
+    //   // System.Console.WriteLine($"Here we have s: {s} and t: {t}");
+    //   return s == t;
+    // }
 
-    public char[] sort(char[] arr) {
-      int n = arr.Length; 
-        for (int i = 1; i < n; ++i) { 
-          char temp = arr[i]; 
-          int j = i - 1; 
+    // public char[] sort(char[] arr) {
+    //   int n = arr.Length; 
+    //     for (int i = 1; i < n; ++i) { 
+    //       char temp = arr[i]; 
+    //       int j = i - 1; 
 
-          // Move elements of arr[0..i-1], 
-          // that are greater than temp, 
-          // to one position ahead of 
-          // their current position 
-          while (j >= 0 && arr[j] > temp) { 
-              arr[j + 1] = arr[j]; 
-              j = j - 1; 
-          } 
-          arr[j + 1] = temp; 
-        }
-      return arr;
+    //       // Move elements of arr[0..i-1], 
+    //       // that are greater than temp, 
+    //       // to one position ahead of 
+    //       // their current position 
+    //       while (j >= 0 && arr[j] > temp) { 
+    //           arr[j + 1] = arr[j]; 
+    //           j = j - 1; 
+    //       } 
+    //       arr[j + 1] = temp; 
+    //     }
+    //   return arr;
+    // }
+
+    public Boolean isAnagram(String s, String t) {
+      if (s.Length != t.Length) return false;
+
+      int[] counter = new int[26]; // you do a 26 space because the alphabet is made out of 26 
+      for(int i = 0; i<s.Length; i++) {
+        counter[s[i]-'a']++; // here you are doing, the character - a; will give you the position in the alphabet and so add 1
+        counter[t[i]-'a']--; // here if it matches the line above, you substract, the idea is that the final sum == 0;
+      }
+
+      foreach (var count in counter)
+        if (count != 0) return false;
+
+      return true;
     }
 
   }
