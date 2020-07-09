@@ -20,6 +20,35 @@ namespace algorithms {
       return head;
     }
 
+    public void print() {
+      System.Console.WriteLine("Testing that this works");
+    }    
+
+  }
+
+  public class ListNode {
+    public int val;
+    public ListNode next;
+    // constructor
+    public ListNode(int val = 0, ListNode next = null) {
+      this.val = val;
+      this.next = next;
+    }
+
+    public ListNode PrintNodes(ListNode node) {
+      System.Console.Write($"[{node.val}]->");
+      if (node.next == null) return node;
+      return PrintNodes(node.next);
+    }
+
+    public ListNode ReverseList(ListNode node) {
+      if (node.next.next == null) return node;
+      
+      System.Console.WriteLine(node.val);
+      return ReverseList(node.next);
+
+  
+    }
   }
 
 

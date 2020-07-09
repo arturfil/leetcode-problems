@@ -15,11 +15,16 @@ namespace algorithms
 
             // Testing Area
             // ------------ 
+            ReverseLinkedList lnkList = new ReverseLinkedList(); 
 
-            ValidAnagram vAnagram = new ValidAnagram();
-            string s1 = "anagram";                           // NOTE: this go with doulbe quotes on implementation
-            string s2 = "nagaram";                           // NOTE: this go with doulbe quotes on implementation
-            System.Console.WriteLine(vAnagram.isAnagram(s1, s2));
+            ListNode node2 = new ListNode(6);
+            ListNode node1 = new ListNode(4, node2);
+            ListNode head = new ListNode(2, node1);
+            head.PrintNodes(head);
+            head.ReverseList(head);
+            head.PrintNodes(head);
+
+            
         }
     }
 
