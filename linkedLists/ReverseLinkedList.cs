@@ -41,13 +41,35 @@ namespace algorithms {
       return PrintNodes(node.next);
     }
 
-    public ListNode ReverseList(ListNode node) {
-      if (node.next.next == null) return node;
-      
-      System.Console.WriteLine(node.val);
-      return ReverseList(node.next);
+    public ListNode ReverseList(ListNode head) {
+      // ITERATIVE METHOD
+      /*
+        - Here we are using a temporary variable method.
+        - First we create a Node variable called previous.
+        This variable will help to assing the node.next as our "future" previous node.
+        then our current node or "head" will be now the node.next.
+        - This way we succesfully swap node with node.next using nextTemp;
+        - Every round you assing nextTemp = head.next; when nextTemp = null -> the loop will break.
+      */
+      ListNode prev = null;
+      while(head != null) {
+        ListNode nextTemp = head.next;
+        head.next = prev ; 
+        prev = head; 
+        head = nextTemp; 
+      }
 
-  
+      return prev;
+    }
+
+    // RECURSIVE METHOD
+    // Here we are basically 
+    public ListNode reverseList(ListNode head) {
+      if (head == null || head.next == null) return head;
+      ListNode p = reverseList(head.next); // we have to do this because the value that we take of 'head' is taken before head.next is assigned to null;
+      head.next.next = head;
+      head.next = null;
+      return p;
     }
   }
 
