@@ -82,6 +82,21 @@ namespace algorithms
           string s1 = 'airplane';                           // NOTE: this go with doulbe quotes on implementation
           string s2 = 'lanepair';                           // NOTE: this go with doulbe quotes on implementation
           System.Console.WriteLine(vAnagram.Check(s1, s2));
+
+          /**
+          Reverse LinkedList
+                      ListNode head = new ListNode();
+            ListNode node1 = new ListNode(1);
+            ListNode node2 = new ListNode(2);
+            ListNode node3 = new ListNode(3);
+            head.next = node1;
+            node1.next = node2;
+            node2.next = node3;
+            head.PrintNodes(head);
+            node1.reverseList(head);
+            System.Console.WriteLine();
+            node1.PrintNodes(node3);
+
         "
       );
     }
