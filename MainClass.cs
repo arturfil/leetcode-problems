@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace algorithms
 {
+
     class MainClass {
         
         static void Main(string[] args) {
@@ -14,10 +17,12 @@ namespace algorithms
             // pending.print();
 
             // Testing Area
-            // ------------  
+            // ------------   
             MajorityElement major = new MajorityElement();
-            int[] test_nums = {2,2,3,1,3,2,1,1,1};
-            System.Console.WriteLine(major.returnMayorElement(test_nums));            
+            int[] test_nums = {4,4,4,2,3};
+            int result = major.returnMajElementDict(test_nums);
+            System.Console.WriteLine(result);
+
         }
     }
 

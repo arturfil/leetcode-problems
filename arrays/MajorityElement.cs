@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace algorithms {
 
   public class MajorityElement {
@@ -23,9 +25,10 @@ namespace algorithms {
           }
         }
 
-        if (count > max_counter) 
+        if (count > max_counter) {
           System.Console.WriteLine(num);
           return num;
+        }
       }
       return -1;
     }
@@ -38,11 +41,52 @@ namespace algorithms {
       for a more expensive space process but in return they gain 
       Efficiency.
     */
-    public int return_mayor_element(int[] nums) {
-      // HashMap Mehtod.
-      
+    // private Map<integer, integer> count_numbers(int[] nums) {
+    //   Map<Integer, Integer> counts = new HashMap<Integer, Integer>();
+    //   foreach (int num in nums) {
 
+    //   }
+    // }
+
+    public int returnMajElementDict(int[] nums) {
+      // Dictionary Mehtod.
+      Dictionary<int, int> dict = new Dictionary<int, int>();
+      if (nums.Length == 1)
+        return nums[0];
+
+
+      int majority = nums.Length/2;
+      foreach(int val in nums) {
+        if (dict.ContainsKey(val)) {
+          dict[val]++;
+          if (dict[val] > majority) {
+            return val;
+          }
+
+        } else {
+          dict[val] = 1;
+        }
+      }
       return -1;
+    }
+
+    public int returnMajElementVoting(int[] nums) {
+        // Boyer-Moore majority vote algorithm
+      // I have to check how this algorithm works
+      int result = 0;
+      int count = 0;
+      foreach(int n in nums) {
+        if (count == 0) {
+          result = n;
+          count = 1;
+
+        } else if (n == result) {
+          count++;
+        } else {
+          count--;
+        }
+      }
+      return result;
     }
 
   }
