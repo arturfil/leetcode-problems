@@ -85,17 +85,30 @@ namespace algorithms
 
           /**
           Reverse LinkedList
-                      ListNode head = new ListNode();
-            ListNode node1 = new ListNode(1);
-            ListNode node2 = new ListNode(2);
-            ListNode node3 = new ListNode(3);
-            head.next = node1;
-            node1.next = node2;
-            node2.next = node3;
-            head.PrintNodes(head);
-            node1.reverseList(head);
-            System.Console.WriteLine();
-            node1.PrintNodes(node3);
+          ListNode head = new ListNode();
+          ListNode node1 = new ListNode(1);
+          ListNode node2 = new ListNode(2);
+          ListNode node3 = new ListNode(3);
+          head.next = node1;
+          node1.next = node2;
+          node2.next = node3;
+          head.PrintNodes(head);
+          node1.reverseList(head);
+          System.Console.WriteLine();
+          node1.PrintNodes(node3);
+
+          /**
+          MajorityElement major = new MajorityElement();
+          int[] test_nums = {4,4,4,2,3};
+          int result = major.returnMajElementDict(test_nums);
+          System.Console.WriteLine(result);
+
+          /**
+          MoveZeros mZeros = new MoveZeros();
+          int[] test = {0,1,0,3,12};
+          mZeros.moveZeros(test);
+          mZeros.print(test);
+          //mZeros.print(test);
 
         "
       );

@@ -18,11 +18,7 @@ namespace algorithms
 
             // Testing Area
             // ------------   
-            MajorityElement major = new MajorityElement();
-            int[] test_nums = {4,4,4,2,3};
-            int result = major.returnMajElementDict(test_nums);
-            System.Console.WriteLine(result);
-
+            
         }
     }
 
