@@ -110,6 +110,12 @@ namespace algorithms
           mZeros.print(test);
           //mZeros.print(test);
 
+          /** 
+          ArrayToTree arr2tree = new ArrayToTree();
+          int[] test = {-10, -3, 0, 5, 9};
+          
+          arr2tree.convertToTree(test);
+
         "
       );
     }
