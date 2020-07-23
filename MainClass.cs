@@ -18,10 +18,6 @@ namespace algorithms
 
             // Testing Area
             // ------------   
-            ValidAnagram val = new ValidAnagram();
-            string test1 = "param";
-            string test2 = "parma";
-            val.isAnagram(test1, test2);
 
         }
     }

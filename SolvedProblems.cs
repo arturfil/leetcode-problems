@@ -120,6 +120,12 @@ namespace algorithms
           int[] test = {7,1,5,3,6,4};
           buysell.MaxProfit(test);
 
+          /**
+          ValidAnagram val = new ValidAnagram();
+          string test1 = 'param'; // these go with double quotes
+          string test2 = 'parma'; // double quotes
+          val.isAnagram(test1, test2);
+
         "
       );
     }
