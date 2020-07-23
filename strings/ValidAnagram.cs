@@ -74,12 +74,30 @@ namespace algorithms {
         counter[t[i]-'a']--; // here if it matches the line above, you substract, the idea is that the final sum == 0;
       }
 
+      // first word = param; 1st interation 'p' - 'a' = 0;
+      // scond = parma;
+      // for (int i = 0; i < s.Length; i++) {
+      //   System.Console.WriteLine(counter[i]);
+      //   System.Console.WriteLine(s[i]-'a');
+      //   System.Console.WriteLine(t[i]-'a');
+      // }
+      
+      int number = 0;
+      foreach (var letter in counter) {
+        System.Console.WriteLine(letter);
+        number ++;
+      }
+
+      System.Console.WriteLine($" the counter arr has {number} of items");
+
+
       foreach (var count in counter)
-        if (count != 0) return false;
+        if (count != 0) return false; // this condition happens if we don't have equal characters in the two strings!
 
       return true;
     }
 
   }
+
 
 }

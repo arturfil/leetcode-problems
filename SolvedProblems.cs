@@ -112,9 +112,13 @@ namespace algorithms
 
           /** 
           ArrayToTree arr2tree = new ArrayToTree();
-          int[] test = {-10, -3, 0, 5, 9};
-          
+          int[] test = {-10, -3, 0, 5, 9};         
           arr2tree.convertToTree(test);
+
+          /**
+          BuySell buysell = new BuySell();
+          int[] test = {7,1,5,3,6,4};
+          buysell.MaxProfit(test);
 
         "
       );
