@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 
 namespace algorithms {
-
   // Implementation in MainClass.cs
   /*
     RomanToInteger solution = new RomanToInteger();
@@ -9,8 +8,6 @@ namespace algorithms {
     int result = solution.convertRomanToInt(input);
     System.Console.WriteLine(result);
   */
-
-
   public class RomanToInteger {
     // "C C C X L V I"; // 346
     
@@ -29,9 +26,11 @@ namespace algorithms {
       int sum = 0;
       int previous = 0;
 
+      // "CCCXLVI";
       for (int i = s.Length-1; i >= 0; i--) {
         int current = roman_numbers[s[i]];
-        sum += previous > current ? -current : current;
+        System.Console.WriteLine(current);
+        sum += previous > current ? -current : current; // sum += current || sum += -current
         previous = current;
       }
       return sum;

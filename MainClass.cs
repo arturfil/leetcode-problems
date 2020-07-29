@@ -18,9 +18,14 @@ namespace algorithms
 
             // Testing Area
             // ------------   
-            ExcelColumnNumber excel_sol = new ExcelColumnNumber();
-            string test_2 = "AA";
-            int result = excel_sol.ColumnToNumber(test_2);
+            // ExcelColumnNumber excel_sol = new ExcelColumnNumber();
+            // string test_2 = "AA";
+            // int result = excel_sol.ColumnToNumber(test_2);
+            // System.Console.WriteLine(result);
+
+             RomanToInteger solution = new RomanToInteger();
+            string input = "CCCXLVI";
+            int result = solution.convertRomanToInt(input);
             System.Console.WriteLine(result);
 
         }
