@@ -3,16 +3,20 @@ using System.Collections.Generic;
 
 namespace algorithms {
 
+  /**
+    // Implementation in MainClass.cs
+    ExcelColumnNumber excel_sol = new ExcelColumnNumber();
+    string test_2 = "AA";
+    int result = excel_sol.ColumnToNumber(test_2);
+    System.Console.WriteLine(result);
+  */
+
   public class ExcelColumnNumber {
     /*
-      Check which value they give us.
-      Ceck which base they are giving us that on
-      * Max length = 7;
+      Max length = 7;
       ZY = 701 -> This means that [YZ => (26^1) * letter_value] + [(26^0) * letter_value]
     */
-
     // Dictionary? Array?, depends on the space complexity and time complexity restrictions
-
     public int ColumnToNumber(string s) {
 
       // Y * (26^0) = 25
@@ -25,10 +29,7 @@ namespace algorithms {
         total += current_letter * (int)Math.Pow(26, power);
         power++;
       }
-
       return total;
     }
-
   }
-
 }
