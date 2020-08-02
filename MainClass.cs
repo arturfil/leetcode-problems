@@ -20,7 +20,7 @@ namespace algorithms
             FirstUniqChar first = new FirstUniqChar();
             string test = "abcabd"; // this should return 2 since "c" is the first non
             // repeating character
-            int solution = first.checkFirstChar(test);
+            int solution = first.returnFirstUniqChar(test);
             System.Console.WriteLine(solution);
             // Boolean result = first.foundDuplicate(test, 'c');
             // System.Console.WriteLine(result);
