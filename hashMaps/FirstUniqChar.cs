@@ -5,6 +5,17 @@ using System.Linq;
 
 namespace algorithms {
 
+  // TESTING
+  /*
+    FirstUniqChar first = new FirstUniqChar();
+    string test = "abcabd"; // this should return 2 since "c" is the first non
+    // repeating character
+    int solution = first.returnFirstUniqChar(test);
+    System.Console.WriteLine(solution);
+    // Boolean result = first.foundDuplicate(test, 'c');
+    // System.Console.WriteLine(result);
+  */
+
   public class FirstUniqChar {
     /*
       Check withing a string if there is a a non-repeating char in a string and return
