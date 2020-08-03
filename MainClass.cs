@@ -17,6 +17,10 @@ namespace algorithms
 
             // Testing Area
             // ------------ 
+            PascalsTriangle triangle = new PascalsTriangle();
+            triangle.Generate(5);
+            
+
         }
     }
 

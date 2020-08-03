@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+
 namespace algorithms {
   /**
     example1
@@ -8,7 +11,21 @@ namespace algorithms {
   public class IntersectionOfArrays {
 
     public int[] Intersect(int[] arr1, int[] arr2) {
-      return arr1;
+      List<int> temp = new List<int>();
+      for (int i = 0; i < arr1.Length-1; i++) {
+        for (int j = 0; j < arr2.Length-1; j++) {
+          if (arr2[j] == arr1[i]) {
+            if (arr2[j+1] == arr1[i+1]) {
+              temp.Add(arr1[i]);
+              temp.Add(arr1[i+1]);
+            }
+          }   
+        }
+      }
+
+      int[] solution = temp.ToArray();
+
+      return solution;
     }
 
   }
