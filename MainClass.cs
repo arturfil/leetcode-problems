@@ -15,8 +15,11 @@ namespace algorithms
             // solved.print();
             // pending.print();
 
-            // Testing Area
-            // ------------   
+						int[] nums1 = {4,9,5};
+            int[] nums2 = {9,4,9,8,4};
+
+            IntersectionII intersection = new IntersectionII();
+            intersection.Intersect(nums1, nums2);
 
         }
     }
