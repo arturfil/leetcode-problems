@@ -15,12 +15,7 @@ namespace algorithms
             // solved.print();
             // pending.print();
 
-            var happy = new HappyNumber();
-            int num = 19;
-            
-
-            var result = happy.IsHappy(num);
-            System.Console.WriteLine(result);
+           
 				}
     }
 

@@ -1,11 +1,11 @@
 using System;
+
 using System.Collections;
 using System.Collections.Generic;
 
 namespace algorithms {
 
   public class HappyNumber {
-    
     /*
     ::::::::::::::::TESTING::::::::::::::::::::
     var happy = new HappyNumber();

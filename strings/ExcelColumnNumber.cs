@@ -16,7 +16,6 @@ namespace algorithms {
       Max length = 7;
       ZY = 701 -> This means that [YZ => (26^1) * letter_value] + [(26^0) * letter_value]
     */
-    // Dictionary? Array?, depends on the space complexity and time complexity restrictions
     public int ColumnToNumber(string s) {
 
       // Y * (26^0) = 25
