@@ -25,6 +25,7 @@ namespace algorithms {
 
   // Though you have to make sure that there is a pattern
 
+  // ::::::::::::::::::::::::::::: NOTE -> CHECK FOR SORT SOLUTION LATER!
 	public class IntersectionII {
 		
 		public int[] Intersect(int[] nums1, int[] nums2) {

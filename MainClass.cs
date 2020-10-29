@@ -15,13 +15,13 @@ namespace algorithms
             // solved.print();
             // pending.print();
 
-						int[] nums1 = {4,9,5};
-            int[] nums2 = {9,4,9,8,4};
+            var happy = new HappyNumber();
+            int num = 19;
+            
 
-            IntersectionII intersection = new IntersectionII();
-            intersection.Intersect(nums1, nums2);
-
-        }
+            var result = happy.IsHappy(num);
+            System.Console.WriteLine(result);
+				}
     }
 
 }   
