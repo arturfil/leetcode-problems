@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using math;
 
 namespace algorithms
 {
@@ -15,8 +16,15 @@ namespace algorithms
             // solved.print();
             // pending.print();
 
+            int test = 3;
+            ClimbingStairs stairs = new ClimbingStairs();
+            int result = stairs.NumOfWays(test);
+
+            System.Console.WriteLine(result);
            
 				}
     }
 
 }   
+
+
