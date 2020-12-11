@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using math;
+﻿
+
+using Greedy;
 
 namespace algorithms
 {
@@ -16,15 +14,30 @@ namespace algorithms
             // solved.print();
             // pending.print();
 
-            int test = 3;
-            ClimbingStairs stairs = new ClimbingStairs();
-            int result = stairs.NumOfWays(test);
 
-            System.Console.WriteLine(result);
-           
-				}
+          //  int[] test = {1,3,5,6};
+          //  var subArray = new MaxSubArray(); 
+          //  var ans = subArray.largestSum(test);
+          //  System.Console.WriteLine(ans);
+
+          // int[] test = {1,1,2,3,4};
+          // var duplicates = new RemoveDuplicates();
+          // duplicates.remove(test);
+
+          int[] test = {-2,1,-3,4,-1,2,1,-5,4};
+          var max = new MaxSubArray();
+          max.largestArray(test);
+
+        }   
     }
 
 }   
 
 
+/*
+  | 1 + 1 + 1 + 1
+    2 + 2
+    1 + 1 + 2
+    1 + 2 + 1
+    2 + 1 + 1
+*/
